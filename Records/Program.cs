@@ -38,8 +38,10 @@ namespace Records
 
             Tweet helloTweet = goodbyeTweet with { Text = "Hello C# 9" };
 
-            Console.WriteLine($"Does tweet equal helloTweet: {tweet == helloTweet}");
-            Console.WriteLine($"Does tweet reference equal helloTweet: {object.ReferenceEquals(tweet, helloTweet)}");
+            Console.WriteLine(
+                $"Does tweet equal helloTweet: {tweet == helloTweet}");
+            Console.WriteLine(
+                $"Does tweet reference equal helloTweet: {object.ReferenceEquals(tweet, helloTweet)}");
         }
 
         static void ImmutableClassDemo()
